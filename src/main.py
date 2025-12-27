@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 load_dotenv(".env")
 
 from routes.base import base_router
