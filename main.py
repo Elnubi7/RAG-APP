@@ -1,6 +1,7 @@
 from fastapi import FastAPI
+from dotenv import load_dotenv
+load_dotenv(".env")
 
+from routes.base import base_router
 app = FastAPI()
-@app.get("/1")
-def w():
-    return "Hello, World!"
+app.include_router(base_router)
