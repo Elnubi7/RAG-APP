@@ -5,6 +5,7 @@ class settings(BaseSettings):
     APP_VERSION: str
     FILE_ALLOWED_EXTENSIONS: list
     MAX_FILE_SIZE_MB: int
+    FLIE_CHUNK_SIZE: int 
 
 
     class Config: 
